@@ -13,6 +13,7 @@ export default defineConfig({
         "./Checkbox": "./src/atoms/Checkbox.tsx",
         "./Input": "./src/atoms/Input.tsx",
         "./Card": "./src/organisms/Card.tsx",
+        "./Form": "./src/molecules/FormField.tsx",
       },
       shared: ["react", "react-dom", "axios"],
     }),

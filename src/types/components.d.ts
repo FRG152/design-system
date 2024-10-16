@@ -1,7 +1,7 @@
 import React from "react";
 
 export interface ButtonComponentProps {
-  type: "button" | "submit" | "reset"; // Especificar los tipos válidos
+  type: "button" | "submit" | "reset";
   text: string;
   style?: React.CSSProperties;
   disabled: boolean;
@@ -12,7 +12,7 @@ export interface InputComponentProps {
   label?: string;
   type: string;
   name: string;
-  formik: any;
+  formik?: any;
   disabled: boolean;
   placeholder?: string;
 }
