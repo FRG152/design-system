@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "design-system",
+      name: "design_system",
       filename: "remoteEntry.js",
       exposes: {
         "./Button": "./src/atoms/Button.tsx",
