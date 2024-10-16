@@ -14,7 +14,7 @@ export default defineConfig({
         "./Input": "./src/atoms/Input.tsx",
         "./Card": "./src/organisms/Card.tsx",
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "axios"],
     }),
   ],
   build: {
