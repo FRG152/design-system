@@ -1,5 +1,9 @@
-const Checkbox = () => {
-  return <div>Checkbox</div>;
+const CheckboxComponent = () => {
+  return (
+    <div className="custom-checkbox-container">
+      <input type="checkbox" className="custom-checkbox" />
+    </div>
+  );
 };
 
-export default Checkbox;
+export default CheckboxComponent;

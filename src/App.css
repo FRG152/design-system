@@ -1,3 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+input,
+select {
+  outline: none;
+  background: none;
+}
+
+/* Color de fondo */
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+/* Color de la barra de progreso */
+progress::-webkit-progress-value {
+  background-color: #375dfb;
+  border-radius: 10px;
+}
+/* Color de la barra de progreso para Firefox */
+progress::-moz-progress-bar {
+  background-color: #375dfb;
+  border-radius: 10px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Button */
+.custom-button {
+  @apply w-[326px] h-12 px-6 py-3 rounded-[999px] justify-center items-center gap-2 inline-flex;
+}
+.custom-button-text {
+  @apply text-center text-lg font-bold leading-normal;
+}
+.custom-button-small {
+  @apply h-8 px-[18px] py-1.5 rounded-[999px] justify-center items-center gap-1 inline-flex;
+}
+.custom-button-small-icon {
+  @apply w-4 h-4 relative;
+}
+.custom-button-small-text {
+  @apply text-center text-[13px] font-bold leading-[13px];
+}
+
+/* Fab Button */
+.custom-fab-container {
+  @apply w-20 h-20 p-3 bg-[#375dfb] rounded-[99px] border-2 border-white justify-start items-start gap-2.5 inline-flex;
+}
+.custom-fab-content {
+  @apply grow shrink basis-0 self-stretch flex-col justify-center items-center inline-flex;
+}
+.custom-fab-text {
+  @apply self-stretch text-center text-white text-xs font-bold leading-[14px];
+}
+.custom-fab-icon {
+  @apply w-[42px] h-[42px] relative;
+}
+
+/* More Button */
+.custom-button-more-container {
+  @apply h-[86px] p-2 flex-col justify-center items-center gap-1 inline-flex;
+}
+.custom-button-more-content {
+  @apply w-[38px] h-[38px] bg-[#375dfb] rounded-[999px] flex-col justify-center items-center gap-2.5 flex;
+}
+.custom-button-more-icon {
+  @apply w-8 h-8 relative;
+}
+.custom-button-more-text {
+  @apply text-center text-[#375dfb] text-base font-bold leading-7;
+}
+
+/* Counter Button */
+.custom-button-counter-container {
+  @apply h-8 px-1 py-0.5 rounded-[999px] justify-center items-center inline-flex;
+}
+.custom-button-counter-icon {
+  @apply w-6 h-6 relative;
+}
+.custom-button-counter-text {
+  @apply grow shrink basis-0 text-center text-base font-bold leading-7;
+}
+
+/* Input */
+.custom-input-container {
+  @apply h-[88px] rounded-lg flex-col justify-start items-start gap-1 inline-flex;
+}
+.custom-input-label {
+  @apply text-[#001638] text-base font-normal leading-7;
+}
+.custom-input-icon {
+  @apply w-5 h-5 relative;
+}
+.custom-input {
+  @apply self-stretch text-[#76a0b2] text-base font-normal leading-7;
+}
+.custom-box {
+  @apply self-stretch h-14 px-[15px] py-3.5 bg-white border border-neutral_300 rounded-[15px] flex-col justify-center items-start gap-3 flex;
+}
+.custom-box-error {
+  @apply self-stretch h-14 px-[15px] py-3.5 bg-white border border-[#fe115f] rounded-[15px] flex-col justify-center items-start gap-3 flex;
+}
+.custom-content {
+  @apply self-stretch justify-start items-center gap-3 inline-flex;
+}
+.custom-input-content {
+  @apply grow shrink basis-0 flex-col justify-center items-start gap-0.5 inline-flex;
+}
+.custom-input-text-error {
+  @apply text-[#fe115f] text-[13px] font-normal leading-[13px];
+}
+
+/* Search Input */
+.custom-input-search-container {
+  @apply w-[350px] h-10 px-2 py-1.5 bg-[#f0f4f8] rounded-[99px] border border-[#cfe4f7] justify-start items-center gap-2 inline-flex;
+}
+.custom-input-search-icon {
+  @apply w-6 h-6 relative;
+}
+.custom-input-search {
+  @apply grow shrink basis-0 text-[#001638] text-base font-normal leading-7;
+}
+
+/* Select */
+.custom-select-container {
+  @apply w-[350px] h-14 px-[15px] py-3.5 bg-[#f0f4f8] rounded-lg flex-col justify-center items-start gap-3 inline-flex;
+}
+.custom-content {
+  @apply w-80 justify-start items-center gap-3 inline-flex;
+}
+.custom-select {
+  @apply grow shrink basis-0 text-[#001638] text-xl font-normal leading-7;
+}
+.custom-select-icon {
+  @apply w-5 h-5 relative;
+}
+.custom-select-label {
+  @apply text-[#001638] text-[13px] font-normal leading-[13px];
+}
+
+/* Range */
+.custom-range-container {
+  @apply w-[166px] h-7 relative;
+}
+.custom-range {
+  @apply w-[166px] h-1 left-0 top-[12px] absolute bg-[#375dfb] rounded-sm;
+}
+
+/* SwitchTab */
+.custom-switchTab-container {
+  @apply w-[164px] h-8 py-0.5 bg-[#f8f8fb] rounded-[99px] justify-center items-center gap-2 inline-flex;
+}
+.custom-switchTab-content {
+  @apply justify-center items-center gap-2 flex;
+}
+.custom-switchTab-icon {
+  @apply w-4 h-4 relative;
+}
+.custom-switchTab-text {
+  @apply text-[15px] font-bold leading-7;
+}
+
+/* Checkbox */
+.custom-checkbox-container {
+  @apply w-5 h-5 justify-center items-center inline-flex;
+}
+.custom-checkbox {
+  @apply w-5 h-5 relative bg-[#f0f4f8] border border-[#76a0b2];
+}
+.custom-checkbox:checked {
+  @apply bg-[#375dfb];
+}
+
+/* Pill */
+.custom-pill-container {
+  @apply h-7 px-3.5 rounded-[99px] justify-start items-center gap-1 inline-flex;
+}
+.custom-pill-icon {
+  @apply w-4 h-4 relative;
+}
+.custom-pill-text {
+  @apply text-base font-normal leading-7;
+}
+
+/* Chip Tap */
+.custom-chipTap-container {
+  @apply h-8 px-3.5 py-1 rounded-[99px] justify-center items-center gap-1 inline-flex;
+}
+.custom-chipTap-large-container {
+  @apply w-[164px] h-8 py-0.5 rounded-lg justify-center items-center gap-2.5 inline-flex;
+}
+
+/* Switch Icon */
+.custom-switchIcon-container {
+  @apply h-[33px] px-[9px] py-0.5 rounded-[99px] justify-start items-start gap-2.5 inline-flex;
+}
+.custom-switchIcon-content {
+  @apply w-[29px] h-[29px] pl-0.5 pr-[2.83px] pt-0.5 pb-[2.83px] justify-center items-center flex;
+}
+.custom-switchIcon-content-icon {
+  @apply w-[24.17px] h-[24.17px] relative;
+}
+.custom-switchIcon-icon {
+  @apply w-[14.98px] h-[22.44px] left-[5px] top-[1px] absolute;
+}
