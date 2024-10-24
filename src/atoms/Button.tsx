@@ -1,22 +1,27 @@
-import styles from "./button.module.css";
 import { ButtonComponentProps } from "../types/components";
 
 const ButtonComponent = ({
+  img,
+  icon,
   type,
-  text,
-  style,
+  small = false,
   disabled,
+  styleButton,
   eventButton,
+  children,
 }: ButtonComponentProps) => {
   return (
     <button
       type={type}
-      disabled={disabled}
       onClick={eventButton}
-      className={styles.button}
-      style={{ ...style }}
+      disabled={disabled}
+      className={`${
+        small ? `custom-button-small` : "custom-button"
+      } ${styleButton}`}
     >
-      {text}
+      {img && img}
+      {icon && icon}
+      {children}
     </button>
   );
 };
