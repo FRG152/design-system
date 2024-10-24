@@ -1,10 +1,10 @@
-import { useFormik } from "formik";
-import ButtonComponent from "../atoms/Button";
-import InputComponent from "../atoms/Input";
 import {
   initialValues,
   validationSchema,
 } from "../validations/loginValidation";
+import { useFormik } from "formik";
+import ButtonComponent from "../atoms/Button";
+import InputComponent from "../atoms/Input";
 
 const FormField = () => {
   const formik = useFormik({
